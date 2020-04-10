@@ -3,6 +3,9 @@ LANG="{{ locale_lang }}"
 {% if locale_all is defined %}
 LC_ALL="{{ locale_all }}"
 {% endif %}
+{% if locale_ctype is defined %}
+LC_CTYPE="{{ locale_ctype }}"
+{% endif %}
 {% if locale_language is defined %}
 LANGUAGE="{{ locale_language }}"
 {% endif %}
